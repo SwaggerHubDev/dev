@@ -44,6 +44,24 @@
           }
         }
       }
+    },
+    "/inventory3" : {
+      "get" : {
+        "summary" : "searches inventory test",
+        "operationId" : "searchInventory3",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria"
+          },
+          "default" : {
+            "description" : "General Error",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorModel-collab"
+            }
+          }
+        }
+      }
     }
   },
   "definitions" : {
@@ -65,6 +83,18 @@
         "code" : {
           "type" : "integer",
           "format" : "int32-private"
+        },
+        "message" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ErrorModel-collab" : {
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "integer",
+          "format" : "int32-collab"
         },
         "message" : {
           "type" : "string"
