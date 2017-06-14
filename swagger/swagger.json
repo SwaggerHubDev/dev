@@ -1,18 +1,32 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "Testing references for code generation on GitHub",
+    "description" : "This is a simple API",
     "version" : "1.0.0",
-    "title" : "Simple Inventory API"
+    "title" : "Simple Inventory API",
+    "contact" : {
+      "email" : "you@your-company.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
   },
   "host" : "dev-virtserver.swaggerhub.com",
   "basePath" : "/qa1Org_A/SHUB-3853/1.0.0",
+  "tags" : [ {
+    "name" : "admins",
+    "description" : "Secured Admin-only calls"
+  }, {
+    "name" : "developers",
+    "description" : "Operations available to regular developers"
+  } ],
   "schemes" : [ "https" ],
   "paths" : {
-    "/inventory1" : {
+    "/inventory" : {
       "get" : {
         "summary" : "searches inventory test",
-        "operationId" : "searchInventory1",
+        "operationId" : "searchInventory",
         "parameters" : [ ],
         "responses" : {
           "200" : {
@@ -21,43 +35,7 @@
           "default" : {
             "description" : "General Error",
             "schema" : {
-              "$ref" : "#/definitions/ErrorModel-public"
-            }
-          }
-        }
-      }
-    },
-    "/inventory2" : {
-      "get" : {
-        "summary" : "searches inventory test",
-        "operationId" : "searchInventory2",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "search results matching criteria"
-          },
-          "default" : {
-            "description" : "General Error",
-            "schema" : {
-              "$ref" : "#/definitions/ErrorModel-private"
-            }
-          }
-        }
-      }
-    },
-    "/inventory3" : {
-      "get" : {
-        "summary" : "searches inventory test",
-        "operationId" : "searchInventory3",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "search results matching criteria"
-          },
-          "default" : {
-            "description" : "General Error",
-            "schema" : {
-              "$ref" : "#/definitions/ErrorModel-collab"
+              "$ref" : "#/definitions/ErrorModel"
             }
           }
         }
@@ -65,36 +43,12 @@
     }
   },
   "definitions" : {
-    "ErrorModel-public" : {
+    "ErrorModel" : {
       "required" : [ "code", "message" ],
       "properties" : {
         "code" : {
           "type" : "integer",
-          "format" : "int123-public-full"
-        },
-        "message" : {
-          "type" : "string"
-        }
-      }
-    },
-    "ErrorModel-private" : {
-      "required" : [ "code", "message" ],
-      "properties" : {
-        "code" : {
-          "type" : "integer",
-          "format" : "int32-private-full"
-        },
-        "message" : {
-          "type" : "string"
-        }
-      }
-    },
-    "ErrorModel-collab" : {
-      "required" : [ "code", "message" ],
-      "properties" : {
-        "code" : {
-          "type" : "integer",
-          "format" : "int32-collab-full"
+          "format" : "int32"
         },
         "message" : {
           "type" : "string"
