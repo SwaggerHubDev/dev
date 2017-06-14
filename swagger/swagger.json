@@ -70,7 +70,7 @@
       "properties" : {
         "code" : {
           "type" : "integer",
-          "format" : "int123-public"
+          "format" : "int123-public-full"
         },
         "message" : {
           "type" : "string"
@@ -82,7 +82,7 @@
       "properties" : {
         "code" : {
           "type" : "integer",
-          "format" : "int32-private"
+          "format" : "int32-private-full"
         },
         "message" : {
           "type" : "string"
@@ -94,7 +94,7 @@
       "properties" : {
         "code" : {
           "type" : "integer",
-          "format" : "int32-collab"
+          "format" : "int32-collab-full"
         },
         "message" : {
           "type" : "string"
