@@ -8,7 +8,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * ErrorModelPrivate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-14T10:03:28.562Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-06-14T10:03:51.306Z")
 public class ErrorModelPrivate {
   @SerializedName("code")
   private Integer code = null;
