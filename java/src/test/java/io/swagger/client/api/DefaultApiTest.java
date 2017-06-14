@@ -1,7 +1,9 @@
 package io.swagger.client.api;
 
 import io.swagger.client.ApiException;
-import io.swagger.client.model.ErrorModel;
+import io.swagger.client.model.ErrorModelCollab;
+import io.swagger.client.model.ErrorModelPrivate;
+import io.swagger.client.model.ErrorModelPublic;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -26,8 +28,38 @@ public class DefaultApiTest {
      *          if the Api call fails
      */
     @Test
-    public void searchInventoryTest() throws ApiException {
-        // api.searchInventory();
+    public void searchInventory1Test() throws ApiException {
+        // api.searchInventory1();
+
+        // TODO: test validations
+    }
+    
+    /**
+     * searches inventory test
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void searchInventory2Test() throws ApiException {
+        // api.searchInventory2();
+
+        // TODO: test validations
+    }
+    
+    /**
+     * searches inventory test
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void searchInventory3Test() throws ApiException {
+        // api.searchInventory3();
 
         // TODO: test validations
     }

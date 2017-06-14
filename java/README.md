@@ -72,9 +72,9 @@ public class DefaultApiExample {
         
         DefaultApi apiInstance = new DefaultApi();
         try {
-            apiInstance.searchInventory();
+            apiInstance.searchInventory1();
         } catch (ApiException e) {
-            System.err.println("Exception when calling DefaultApi#searchInventory");
+            System.err.println("Exception when calling DefaultApi#searchInventory1");
             e.printStackTrace();
         }
     }
@@ -88,12 +88,16 @@ All URIs are relative to *https://dev-virtserver.swaggerhub.com/qa1Org_A/SHUB-38
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**searchInventory**](docs/DefaultApi.md#searchInventory) | **GET** /inventory | searches inventory test
+*DefaultApi* | [**searchInventory1**](docs/DefaultApi.md#searchInventory1) | **GET** /inventory1 | searches inventory test
+*DefaultApi* | [**searchInventory2**](docs/DefaultApi.md#searchInventory2) | **GET** /inventory2 | searches inventory test
+*DefaultApi* | [**searchInventory3**](docs/DefaultApi.md#searchInventory3) | **GET** /inventory3 | searches inventory test
 
 
 ## Documentation for Models
 
- - [ErrorModel](docs/ErrorModel.md)
+ - [ErrorModelCollab](docs/ErrorModelCollab.md)
+ - [ErrorModelPrivate](docs/ErrorModelPrivate.md)
+ - [ErrorModelPublic](docs/ErrorModelPublic.md)
 
 
 ## Documentation for Authorization
@@ -107,5 +111,5 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 ## Author
 
-you@your-company.com
+
 
